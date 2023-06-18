@@ -1,0 +1,85 @@
+<!--This project is created by agraj...-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Click & KeyLogger</title>
+    <style>
+        body{
+            background:linear-gradient(rgb(192, 212, 255),rgb(130, 240, 255))
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            border:1px dotted blue;
+            margin: 20px;
+            padding: 20px;
+        }
+        #log, #state,#log2
+        {
+            width: 30vw;
+            height: 50px;
+            border: 1px solid black;
+            padding:10px;
+            font-size:20px;
+            text-align: center;
+            margin-top:20px;
+            background-color: #ffa400;
+            border-radius:10px;
+        }
+        .button-container{
+            display: flex;
+            flex-direction:row;
+        }
+        button{
+            font-size: 20px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            margin-right:20px;
+            border-radius: 7px;
+        }
+    </style>
+    
+</head>
+<body>
+<div>
+    <h1 style="color: rgb(21, 21, 93);text-align: center; text-indent: 5px; border: 20px solid rgb(167, 207, 255);padding:10px 5px;border-style:ridge;"> Mouse click & Keys Logger</h1>
+<!-- Key Logger     -->
+    <div class="container">
+        <img src="typing.png" height="150px" width="200px">
+        <h1 style="border:2px solid black; padding:5px; border-radius:2px 10px;">Key Logger</h1>
+        <p>:: <!--agraj-->&nbsp;&nbsp;&nbsp;&nbsp;  Press your Keyboard keys &nbsp;&nbsp;&nbsp;&nbsp;  ::</p>
+        <div class="button-container">
+            <button id="start-btn">Start logging keypresses</button>
+            <button id="stop-btn">Stop logging keypresses</button>
+        </div>
+        <div class="button-container">
+            <div id="log"></div>
+            <div id="state"></div>
+        </div>
+    </div>
+
+<!-- Mouse Click Logger -->
+    <div class="container">
+        <img src="left-click.png" height="80px" width="110px">
+        <h1 style="border:2px solid black; padding:2px; border-radius:2px 10px;">Mouse Click Logger</h1>
+        <p>:: &nbsp;&nbsp;&nbsp;&nbsp;  Click your mouse buttons &nbsp;&nbsp;&nbsp;&nbsp;  ::</p>
+        <div class="button-container">
+            <button id="start-btn2">Start clicking buttons</button>
+            <button id="stop-btn2">Stop clicking buttons</button>
+        </div>
+        <div class="button-container">
+            <div id="log2"></div>
+        </div>
+    </div>
+    <hr color="grey">
+  <h5 style="color:rgb(71, 165, 243)"> This project is developed by agraj katiyar.</h5>
+</div>
+    <script src="index.js">
+    </script>
+</body>
+</html>
